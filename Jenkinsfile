@@ -1,10 +1,6 @@
 changed master
 
-pipeline{
-  agent { node { label 'AWSRHEL' } } 
-  tools {
-      git 'git'
-      maven 'maven'
+
   }
   environment {
     IMAGE_TAG = "${env.BUILD_NUMBER}"
