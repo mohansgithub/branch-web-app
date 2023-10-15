@@ -1,16 +1,6 @@
 
-changes in Master
-pipeline{
-  agent { node { label 'AWSRHEL' } } 
-  tools {
-      git 'git'
-      maven 'maven'
-  }
   environment {
-    IMAGE_TAG = "${env.BUILD_NUMBER}"
-    myImageName = "tomcattrain"
-    myDockerhub = "mohanraj123"
-  }
+
   stages{
     stage('SCM Checkout'){
      steps{
