@@ -3,10 +3,7 @@ changed master
 
   }
   environment {
-    IMAGE_TAG = "${env.BUILD_NUMBER}"
-    myImageName = "tomcattrain"
-    myDockerhub = "mohanraj123"
-  }
+
   stages{
     stage('SCM Checkout'){
      steps{
